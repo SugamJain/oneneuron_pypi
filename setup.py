@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     USER_NAME = "SugamJain"
 
 setuptools.setup(
-    name=f"{PROJECT_NAME} - {USER_NAME}",
+    name=f"{PROJECT_NAME}-{USER_NAME}",
     version="0.0.1",
     author= USER_NAME,
     author_email="sugamjain2000@gmail.com",
@@ -26,5 +26,5 @@ setuptools.setup(
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     python_requires=">=3.7",
-    install_requires=["numpy", "logging", "pandas"]
+    install_requires=["numpy", "logging"]
 )
